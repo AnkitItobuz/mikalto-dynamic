@@ -9,8 +9,13 @@ const submit = document.querySelector(".submit-btn");
 let checkInDate;
 let checkOutDate;
 window.onload=function(){
-   checkInDate = new Date().toISOString().split('T')[0];
+   const todayDate = new Date().toISOString().split('T')[0];
+   checkInDate = todayDate;
   document.getElementsByName("check-in-date")[0].setAttribute('min', checkInDate);
+
+  checkOutDate = todayDate;
+  document.getElementsByName("check-out-date")[0].setAttribute('min', checkOutDate);
+
 }
 
 

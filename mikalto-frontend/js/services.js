@@ -6,7 +6,7 @@ const wildImage = document.querySelectorAll(".wild-image");
 getImages()
 async function getImages(){
     try{
-        let data = await fetch('http://localhost:9400/').then((data) => data.json());
+        let data = await fetch('http://localhost:9400/experienceSection').then((data) => data.json());
 massageImage.forEach(element => {
     element.src = data.experienceSection.massageImage;
   });
