@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mikalto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+
+</head>
+
+<body>
+
+    <!-- navbar section -->
+    <nav class="container-md navbar d-flex flex-column flex-md-row mt-2 jus align-items-center">
+            <div class="d-flex flex-column navbar-brand justify-content-center align-items-center">
+                <span class="color-blue fs-1 text-center p-0 ">MIKALTO</span>
+                <span class="color-blue  hotels-title p-0">HOTELS & RESORTS</span>
+            </div>
+            <div
+                class="nav-item  py-2 d-flex flex-column flex-md-row justify-content-center w-75 align-items-center gap-3 mx-auto ">
+                <ul class="d-flex flex-column justify-content-center align-items-center flex-md-row gap-4 ps-0 my-auto">
+                    <li class="list-unstyled"><a href="#" class="nav-item nav-link color-blue link-text">Home</a></li>
+                    <li class="list-unstyled"><a href="#" class="nav-item nav-link color-blue link-text">Our Rooms</a>
+                    </li>
+                    <li class="list-unstyled"><a href="#" class="nav-item nav-link color-blue link-text">Features</a>
+                    </li>
+                    <li class="list-unstyled"><a href="#" class="nav-item nav-link color-blue link-text">Blog</a></li>
+                    <li class="list-unstyled"><a href="#" class="nav-item nav-link color-blue link-text">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+
+   
+
+            <i class="fa-solid fa-bag-shopping color-blue fs-2 link-text"></i>
+
+    </nav>
+
+    <!-- hero section -->
+
+    <section class="container-lg hero-section d-flex flex-column flex-md-row justify-content-center align-items-center gap-5  mt-2">
+            <div class="hero-section-left d-flex flex-column gap-3 mt-3 mt-md-0">
+                <h1 class="text-white text-center text-lg-start">Enjoy your<br> dream vacation</h1>
+                <p class="text-white text-center text-lg-start fs-5">Quiet an endlessly beautiful hideaway</p>
+                <div class="d-flex flex-column flex-lg-row gap-md-3 align-items-center">
+                    <button type="button" class="btn hero-btn py-2 px-3 text-white fs-5">About us</button>
+                    <button type="button"
+                        class="btn hero-btn btn-link nav-link text-white d-flex align-items-center gap-2 fs-5 px-3 py-2">View
+                        HomeStay <i class="fa-solid fa-arrow-right mt-1"></i></button>
+                </div>
+            </div>
+
+            <div class="hero-section-right bg-white py-lg-3 rounded-3 px-md-4 mb-5 mx-3 ms-lg-5">
+                <p class="fs-1 text-center">Search Room</p>
+                <p class="color-mid-blue text-center mx-2 md-0">Get the latest on our COVID-19 response</p>
+
+                <form action="" class="pb-3 d-flex flex-column justify-content-center form">
+                    <div class="color-blue d-flex flex-column flex-md-row mx-2 mx-md-0 gap-md-5">
+                        <div class="d-flex flex-column ">
+                            <p><i class="fa-regular fa-calendar"></i>
+                                Checkin*
+                            </p>
+
+                            <input type="date" placeholder="Check-in-date" name="check-in-date"
+                                class="border-start-0 border-end-0 border-top-0 border-bottom-1 check-in-date selecting-no" required>
+                        </div>
+                        <div class="d-flex flex-column ">
+                            <p><i class="fa-regular fa-calendar"></i>
+                                Checkout*
+                            </p>
+                            <input type="date" placeholder="Check-out-date" name="check-out-date"
+                                class="check-out-date border-start-0 border-end-0 border-top-0 border-bottom-1 selecting-no " required>
+
+                        </div>
+                    </div>
+                    <div class="mt-4 mx-2 mx-md-0 d-flex flex-column">
+                        <label for="Adults" class="color-blue"><i class="fa-regular fa-user me-1"></i> Adults</label>
+                        <select name="numberOfAdults"
+                            class="adults-no selecting-no border-start-0 border-end-0 border-top-0 border-bottom-1 d-flex justify-content-between align-items-center mt-3 " required>
+                            <option value="0"></option>
+                            <option value="1 ">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+
+                        </select>
+                    </div>
+                    <div class="mt-4 mx-2 mx-md-0 d-flex flex-column">
+                        <label for="Adults" class="color-blue"><i class="fa-solid fa-child me-1"></i> Children</label>
+                        <select name="numberOfChildren"
+                            class="children-no selecting-no border-start-0 border-end-0 border-top-0 border-bottom-1 d-flex justify-content-between align-items-center mt-3 " required>
+                            <option value="0"></option>
+                            <option value="1 ">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-center ">
+                        <button type="Submit"
+                            class="mt-4 px-5 mx-2 py-3 text-center  text-white border-0 background-blue other-btns submit-btn">Check
+                            availability </button>
+                    </div>
+                </form>
+
+            </div>
+
+
+    </section>
+    <!-- welcome section -->
+
+    <section class="welcome mt-5 d-flex flex-column flex-md-row justify-content-evenly align-items-center gap-5 mx-lg-5 position-relative ">
+
+            <div class="welcome-left ">
+                <p class="color-blue">WELCOME TO</p>
+                <h2>The Mikalto Luxury & Comfort HomeStay</h2>
+                <p class=""> Welcome to our five-star hotel in pureto de la Cruz's old town. A marvellous combination of
+                    architecture, design and contemporary art. 32 rooms and 10 uniquely different suites ensures
+                    our guests' stay is extra special.</p>
+                <div><img src="/mikalto-frontend/images/welcome-section/sign.png" alt="signature" class="img-fluid">
+                </div>
+                <p>MELINDA AMANDA - HOTEL MANAGER</p>
+            </div>
+
+            <div class="welcome-right d-flex flex-column gap-3 gap-xl-0">
+                <div><img src="" alt="house image" class="house-image img-fluid"></div>
+                <div><img src="" alt="pool image" class="pool-image img-fluid"></div>
+                <div><img src="" alt="house image" class="house2-image img-fluid"></div>
+            </div>
+    </section>
+
+    <!-- rooms section -->
+
+    <section class="rooms-section">
+        <div class="slides  room-section-info">
+
+            <div class="background-blue  mt-5 px-2 px-md-0 room-section d-flex flex-column flex-md-row align-items-center justify-content-between  gap-2 gap-md-0 ">
+
+                <div
+                    class="rooms  d-flex flex-column justify-content-center align-items-center align-items-md-start p-md-5 p-0">
+                    <p class="color-pink ">ELEGANCE AND COMFORT</p>
+                    <h2 class="text-white ">Standard Room</h2>
+                    <span class="text-white-50 mt-1 ">From: <b class="text-white standard-room-price"></b> night</span>
+                    <p class="text-white-50 text-center text-md-start">With wide and comfortable areas and daylight
+                        pouring
+                        in
+                        from the...</p>
+
+                    <div class="bed-specification d-flex  justify-content-between gap-5 gap-md-2">
+
+                        <div class="d-flex flex-column">
+                            <span class="text-white">Bed:</span>
+                            <span class="text-white">Capacity:</span>
+                            <span class="text-white">Room size:</span>
+                            <span class="text-white">View:</span>
+                        </div>
+
+                        <div class="d-flex flex-column">
+                            <span class="text-white standard-bed"></span>
+                            <span class="text-white standard-capacity"></span>
+                            <span class="text-white standard-size"></span>
+                            <span class="text-white standard-view"></span>
+                        </div>
+                    </div>
+                    <button type="button"
+                        class="border-white border-1 background-blue text-white px-4 py-2 mt-4 mb-2 other-btns">View
+                        Details</button>
+                </div>
+                <div class="room-section-image">
+                    <img src="" alt="standard room" class="img-fluid standard-room rooms-img">
+                    <span class="left-scroll scroll-btn bg-white rounded-4 p-2 px-3 fs-3">&#10094;</span>
+                    <span class="right-scroll scroll-btn bg-white rounded-4 p-2 px-3 fs-3">&#10095;</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="slides  room-section-info">
+
+            <div
+                class="background-blue  mt-5 px-2 px-md-0 room-section d-flex flex-column flex-md-row align-items-center justify-content-between  gap-2 gap-md-0 ">
+
+                <div
+                    class="rooms  d-flex flex-column justify-content-center align-items-center align-items-md-start p-md-5 p-0">
+                    <p class="color-pink ">ELEGANCE AND COMFORT</p>
+                    <h2 class="text-white ">Luxary Room</h2>
+                    <span class="text-white-50 mt-1 ">From: <b class="text-white luxary-room-price"></b> night</span>
+                    <p class="text-white-50 text-center text-md-start">With wide and comfortable areas and daylight
+                        pouring
+                        in
+                        from the...</p>
+
+                    <div class="bed-specification d-flex  justify-content-between gap-5 gap-md-2">
+
+                        <div class="d-flex flex-column">
+                            <span class="text-white ">Bed:</span>
+                            <span class="text-white ">Capacity:</span>
+                            <span class="text-white ">Room size:</span>
+                            <span class="text-white ">View:</span>
+                        </div>
+
+                        <div class="d-flex flex-column">
+                            <span class="text-white luxary-bed"></span>
+                            <span class="text-white luxary-capacity"></span>
+                            <span class="text-white luxary-size"></span>
+                            <span class="text-white luxary-view"></span>
+                        </div>
+                    </div>
+                    <button type="button"
+                        class="border-white border-1 background-blue text-white px-4 py-2 mt-4 mb-2 other-btns">View
+                        Details</button>
+                </div>
+                <div class="room-section-image">
+                    <img src="" alt="luxary room" class="img-fluid luxary-room rooms-img">
+                    <span class="left-scroll scroll-btn bg-white rounded-4 p-2 px-3 fs-3">&#10094;</span>
+                    <span class="right-scroll scroll-btn bg-white rounded-4 p-2 px-3 fs-3">&#10095;</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="slides  room-section-info">
+
+            <div
+                class="background-blue  mt-5 px-2 px-md-0 room-section d-flex flex-column flex-md-row align-items-center justify-content-between  gap-2 gap-md-0 ">
+
+                <div
+                    class="rooms  d-flex flex-column justify-content-center align-items-center align-items-md-start p-md-5 p-0">
+                    <p class="color-pink ">ELEGANCE AND COMFORT</p>
+                    <h2 class="text-white ">Ordinary Room</h2>
+                    <span class="text-white-50 mt-1 ">From: <b class="text-white ordinary-room-price"></b> night</span>
+                    <p class="text-white-50 text-center text-md-start">With wide and comfortable areas and daylight
+                        pouring
+                        in
+                        from the...</p>
+
+                    <div class="bed-specification d-flex  justify-content-between gap-5 gap-md-2">
+
+                        <div class="d-flex flex-column">
+                            <span class="text-white">Bed:</span>
+                            <span class="text-white">Capacity:</span>
+                            <span class="text-white">Room size:</span>
+                            <span class="text-white">View:</span>
+                        </div>
+
+                        <div class="d-flex flex-column">
+                            <span class="text-white ordinary-bed"></span>
+                            <span class="text-white ordinary-capacity"></span>
+                            <span class="text-white ordinary-size"></span>
+                            <span class="text-white ordinary-view"></span>
+                        </div>
+                    </div>
+                    <button type="button"
+                        class="border-white border-1 background-blue text-white px-4 py-2 mt-4 mb-2">View
+                        Details</button>
+                </div>
+                <div class="room-section-image">
+                    <img src="" alt="standard room" class="img-fluid ordinary-room rooms-img">
+                    <span class="left-scroll scroll-btn bg-white rounded-4 p-2 px-3 fs-3">&#10094;</span>
+                    <span class="right-scroll scroll-btn bg-white rounded-4 p-2 px-3 fs-3">&#10095;</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- choose us section -->
+
+    <section class="choose-us d-flex flex-column  mt-5 container justify-content-evenly">
+            <h2 class="fs-1 ms-5">Why choose our hostel?</h2>
+
+            <div class=" d-flex flex-column flex-md-row justify-content-lg-center justify-content-around  mt-4 mx-lg-5 mx-4">
+                <div class="d-flex flex-column flex-sm-row gap-4 choose-us-card">
+                    <i class="fa-solid fa-bell-concierge icon-size mt-1 color-blue"></i>
+                    <P class="d-flex flex-column  color-mid-blue">
+                        <b class="fs-5 text-black">Unique cuisine</b>
+                        We use the best ingredients to make special and really tasty dishes. Choose what you want to eat
+                        every day. You order at the moment.
+                    </P>
+                </div>
+
+                <div class="d-flex flex-column flex-sm-row gap-4 choose-us-card">
+                    <i class="fa-solid fa-person-walking icon-size mt-1 pe-3 color-blue"></i>
+                    <P class="d-flex flex-column  color-mid-blue">
+                        <b class="fs-5 text-black">Yoga & Gym</b>
+                        Sauna and solarium, a fitness corner, bicycles and Mikalto Walking poles available. To stay in
+                        shape
+                        especially on vacation.
+                    </P>
+                </div>
+
+
+                <div class="d-flex flex-column flex-sm-row gap-4 choose-us-card">
+
+                    <i class="fa-solid fa-street-view icon-size mt-1 color-blue"></i>
+                    <P class="d-flex flex-column  color-mid-blue">
+                        <b class="fs-5 text-black">Perfect Location</b>
+                        The hotel is located near some of the most beautiful sandy bbeaches. This is the hotel to book
+                        if
+                        you plan to spend a great deal of time.
+                    </P>
+
+                </div>
+            </div>
+    </section>
+
+    <!-- activities section -->
+
+    <section class="activities-section px-2 px-md-0 mt-5">
+        <div
+            class="activites d-flex flex-column flex-md-row justify-content-center align-items-center  gap-4 gap-md-0">
+            <div class="activities-info background-blue d-flex flex-column justify-content-center p-md-5">
+                <p class="color-pink text-center text-md-start">OTHER ACTIVITES</p>
+                <p class="text-white fs-2 fw-lighter text-center text-md-start">Give yourself a smile- Smile & Wellness
+                </p>
+                <p class="text-white-50 text-center text-md-start">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Laboriosam enim
+                    maiores, quos asperiores
+                    nobis perspiciatis doloremque, nihil nemo consequuntur quo odit omnis voluptates inventore nulla
+                    commodi libero provident quae! Totam rem possimus quis, asperiores quam doloremque est ad laborum
+                    incidunt voluptate. Dolorum quas optio consectetur harum vel incidunt ratione dignissimos veritatis
+                    voluptates sapiente earum sequi aliquam ipsum, quo nulla eligendi neque amet similique in.
+                </p>
+                <a class="text-white fs-5 nav-link d-flex align-items-center  mx-auto mx-lg-0 discover-btn"
+                    href="#">Explore More <i class="fa-solid fa-arrow-right mt-1 ms-2"></i></a>
+            </div>
+
+            <div class="activities-image ">
+                <img src="" class="swimming-pool-image" alt="swimming pool">
+            </div>
+        </div>
+        <div
+            class="activites mt-4 mt-lg-0 d-flex flex-column-reverse flex-md-row justify-content-center align-items-center gap-4 gap-md-0">
+            <div class="activities-image">
+                <img src="" class="home-image" alt="swimming pool">
+            </div>
+            <div class="activities-info background-blue d-flex flex-column justify-content-center  p-md-5 p-4">
+                <p class="color-pink text-center text-md-start">RECONNECT WITH NATURE</p>
+                <p class="text-white fs-2 fw-lighter text-center text-md-start">Experience a truly unforgettable holiday
+                </p>
+                <p class="text-white-50 text-center text-md-start">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Laboriosam enim
+                    maiores, quos asperiores
+                    nobis perspiciatis doloremque, nihil nemo consequuntur quo odit omnis voluptates inventore nulla.
+                </p>
+
+                <ul class="text-white-50">
+                    <li class=""><span class="text-white-50">Thermal water with ancient baths</span> </li>
+                    <li class=""><span class="text-white-50"> Turkish bath</span></li>
+                    <li class=""><span class="text-white-50"> Turkish sauna</span></li>
+                    <li class=""><span class="text-white-50"> Relax and therapy message</span></li>
+                    <button type="button"
+                        class="border-white border-1 background-blue text-white px-md-5 py-2 mt-3 other-btns">Book your
+                        stay</button>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- experience section -->
+    <section class="experience-section  mt-5">
+        <p class="color-blue text-center pt-3">EXPERIENCE MATTERS</p>
+        <h2 class="text-center mx-auto experience-head">Escape from the World see the experience before you
+            feel it. Discover the luxury of Hotel Mikalto</h2>
+
+        <div class="d-flex flex-column flex-xl-row gap-3 justify-content-center align-items-center mb-5">
+            <div class="d-flex flex-column flex-md-row gap-3">
+                <div class="experience-cards">
+                    <img src="" alt="massage image" class="massage-image">
+                    <p class="color-blue mt-3">WELLNESS</p>
+                    <p class="fs-3">Dedicated to wellness</p>
+                    <p class="experience-cards-text color-mid-blue">Aman's approach to wellness is focused on
+                        personalisation, privacy and seclusion. Local spa
+                        rituals with indigenous ingredients, offer a
+                        profoundly therapeutic touch, and a gentle sense
+                        of discovery.</p>
+                    <a href="#"
+                        class="color-blue d-flex align-items-center text-decoration-none gap-2 discover-btn">Discover
+                        more<i class="fa-solid fa-arrow-right mt-1"></i></a>
+
+                </div>
+                <div class="experience-cards">
+                    <img src="" alt="window image" class="window-view">
+                    <p class="color-blue mt-3">GIFT CARDS</p>
+                    <p class="fs-3">The dift of future travel</p>
+                    <p class="experience-cards-text color-mid-blue">Share extraordinary experiences with the Aman E-
+                        Gift Card - delivered instantly and offering
+                        memories that last a lifetime.</p>
+                    <a href="#"
+                        class="color-blue d-flex align-items-center text-decoration-none gap-2 mt-5 discover-btn">Discover
+                        more<i class="fa-solid fa-arrow-right mt-1"></i></a>
+
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row gap-3">
+                <div class="experience-cards">
+                    <img src="" alt="soaps image" class="soaps-image">
+                    <p class="color-blue mt-3">MIKALTO SHHOP</p>
+                    <p class="fs-3 experience-spa-head">The spa experience from home</p>
+                    <p class="experience-cards-text color-mid-blue">Skincare and Spa supplements harness powerful
+                        natural ingredients to provide balance and optimal
+                        wellbeing.</p>
+                    <a href="#"
+                        class="color-blue d-flex align-items-center text-decoration-none gap-2 discover-btn">Discover
+                        more<i class="fa-solid fa-arrow-right mt-1"></i></a>
+
+                </div>
+
+                <div class="experience-cards">
+                    <img src="" alt="wild image" class="wild-image">
+                    <p class="color-blue mt-3">EXPERIENCE</p>
+                    <p class="fs-3">Adventures in the wild</p>
+                    <p class="experience-cards-text color-mid-blue">Skincare and Spa supplements harness powerful
+                        natural ingredients to provide balance and optimal
+                        wellbeing.</p>
+                    <a href="#"
+                        class="color-blue d-flex align-items-center text-decoration-none gap-2 discover-btn">Discover
+                        more<i class="fa-solid fa-arrow-right mt-1"></i></a>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="view-servies-btn d-flex justify-content-center mb-4 d-inline">
+            <a href="services.html" class="border border-2 text-decoration-none px-4 py-3 color-blue  text-center ">View
+                all
+                services</a>
+        </div>
+
+
+    </section>
+
+    <!-- hello section -->
+
+    <section
+        class="hello-section d-flex justify-content-md-evenly align-items-md-end justify-content-center align-items-center ">
+
+        <div class="hello-section-card bg-white p-md-5 p-3 mb-xl-5 mb-3 mt-3">
+            <h2>Say hello to whole new you</h2>
+            <p class="color-blue">Proin nec leo vel metus faucibus vehicula.
+                Donec vulputate in magna eget egestas.
+                Aliquam ac facilisis ante, sit amet tincidunt
+                ante. Fusce dolor sapien.</p>
+            <a href="#" class="color-blue d-flex align-items-center text-decoration-none gap-2 discover-btn">Discover
+                more<i class="fa-solid fa-arrow-right mt-1"></i></a>
+
+        </div>
+    </section>
+
+    <!-- rating section -->
+
+    <section
+        class="rating-section -fluid d-flex flex-column flex-sm-row justify-content-evenly  align-items-center pt-5">
+        <div class="rating-card">
+            <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center">
+                    <img src="" alt="customer image" class="first-customer-image customer-image">
+                    <div class="d-flex flex-column ms-2 mt-3">
+                        <b class="fs-5 first-customer-name"></b>
+                        <p class="color-mid-blue first-rating-date"></p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-award ms-5 ratings-icon fs-4"></i>
+            </div>
+
+            <p class="ratings-icon fs-5">●●●●●</p>
+            <h4 class="first-customer-head"></h4>
+            <p class="first-customer-review"></p>
+        </div>
+
+        <div class="rating-card">
+            <div class="d-flex align-items-center ">
+                <img src="" alt="customer image" class="second-customer-image customer-image">
+                <div class="d-flex flex-column ms-2 mt-3">
+                    <b class="fs-5 second-customer-name"></b>
+                    <p class="color-mid-blue second-rating-date"></p>
+                </div>
+                <i class="fa-solid fa-award ms-5 ratings-icon fs-4"></i>
+            </div>
+
+            <p class="ratings-icon fs-5">●●●●</p>
+            <h4 class="second-customer-head"></h4>
+            <p class="second-customer-review"></p>
+        </div>
+
+        <div class="rating-card rating-card-display">
+            <div class=" d-flex align-items-center">
+                <img src="" alt="customer image" class="third-customer-image customer-image">
+                <span class="d-flex flex-column ms-2 mt-3">
+                    <b class="fs-5 third-customer-name"> </b>
+                    <p class="color-mid-blue third-rating-date"> </p>
+                </span>
+                <i class="fa-solid fa-award ms-5 ratings-icon fs-4"></i>
+            </div>
+
+            <p class="ratings-icon fs-5">●●●●●</p>
+            <h4 class="third-customer-head"> </h4>
+            <p class="third-customer-review"> </p>
+        </div>
+
+
+
+
+    </section>
+
+    <!-- map section -->
+
+    <section class="map-section d-flex flex-column flex-lg-row justify-content-around align-items-center">
+        <div
+            class="  map-section-left d-flex flex-column justify-content-center justify-content-md-around align-items-center align-items-md-start mt-5 ">
+            <p class="color-blue">GETTING HERE</p>
+            <h2>How to get there?</h2>
+            <p class="color-mid-blue text-center text-md-start map-section-text">Cras vel sapien erat. Proin molestie
+                malesuada sem, nec
+                euismod
+                metus luctus in. Aliquam eget nibh quis leo tempor congue.
+                Integer accumsan sollicitudin vehicula.
+            </p>
+
+            <div class="d-flex gap-3">
+                <i class="fa-solid fa-plane-up fs-3 mt-2"></i>
+
+                <div>
+                    <b class="fs-4">By plane</b>
+                    <p class="color-mid-blue">Donec ornare orci sit amet laoreet imperdiet. Sed lacus
+                        lorem, pretium id efficitur eu, laoreet quis urna.</p>
+                </div>
+            </div>
+
+            <div class="d-flex gap-3">
+                <i class="fa-solid fa-bus fs-3 mt-2"></i>
+
+
+                <div>
+                    <b class="fs-4">By bus</b>
+                    <p class="color-mid-blue">Donec ornare orci sit amet laoreet imperdiet. Sed lacus
+                        lorem, pretium id efficitur eu, laoreet quis urna.</p>
+                </div>
+            </div>
+
+            <div class="d-flex gap-3">
+                <i class="fa-solid fa-car-rear fs-3 mt-2"></i>
+
+                <div>
+                    <b class="fs-4">By van</b>
+                    <p class="color-mid-blue">Donec ornare orci sit amet laoreet imperdiet. Sed lacus
+                        lorem, pretium id efficitur eu, laoreet quis urna.</p>
+                </div>
+            </div>
+
+            <a href="#"
+                class="color-blue d-flex align-items-center text-decoration-none gap-2 mt-3 discover-btn">Discover
+                more<i class="fa-solid fa-arrow-right mt-1"></i></a>
+        </div>
+
+        <div class="google-map d-flex justify-content-center align-items-center mt-3">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.0439020777926!2d88.42883567404941!3d22.577461279488237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275a5466e0099%3A0x563fb49fb6394261!2sItobuz%20Technologies%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1686672746326!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- join us section -->
+
+    <section class="join-us-section d-flex flex-column flex-lg-row mb-5 mt-4">
+        <div class="d-flex flex-column  flex-md-row gap-2 gap-md-3 justify-content-center align-items-center pt-3 mb-5">
+            <div class="bridge-image"> <img src="" alt="Bridge image" class="bridge"></div>
+            <div class=" d-flex flex-md-column flex-sm-row flex-column gap-2 gap-md-3">
+                <img src="" alt="Cat image" class="cat-image">
+                <img src="" alt="Forest image" class="dog-image">
+            </div>
+        </div>
+
+        <div class="d-flex flex-column justify-content-center align-items-center mx-auto mt-3 mt-lg-0">
+            <p class="color-blue text-center">SPA & WELLNESS</p>
+            <h2 class="text-center">Side by Side with Nature</h2>
+            <p class="color-mid-blue text-center join-us-text">Find harmony and balance from the inside out and outside
+                in.
+                Laborum accusantium libero commodi id officiis itaque esse
+                adipisci, necessitatibus asperiores, illo odio.
+            </p>
+            <button type="button" class="border-0 background-blue text-white px-md-5 py-2 mt-5 mb-5 other-btns">Join
+                us</button>
+        </div>
+
+    </section>
+
+    <!-- subscribe section -->
+
+    <section class="subscribe-section mt-5">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <p class="color-blue">STORIES DELOVERED STRAIGHT</p>
+            <h2 class="text-center">Get News & Update To Your Inbox</h2>
+            <div
+                class="subscribe-box py-2 px-md-2  border border-1 d-flex flex-column flex-md-row justify-content-between ">
+                <input type="email" placeholder="Enter your email address..." class="border-0 mx-2 mx-lg-0">
+                <button type="button"
+                    class="border-0 background-blue text-white px-md-5 py-2 mx-2 mx-lg-0  mt-2 mt-lg-0 other-btns">Subscribe</button>
+            </div>
+            <p class="color-blue">Will be used accordance with our <a href="#" class="color-blue link-text">Privacy
+                    Policiy</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- footer section -->
+
+    <footer class="background-blue">
+        <div
+            class="footer d-flex flex-column flex-lg-row gap-3  justify-content-md-evenly align-items-md-center p-5 text-white">
+            <div class=" justify-content-center align-items-center">
+                <div class="d-flex flex-column navbar-brand">
+                    <span class="text-white fs-1 text-center ms-2">MIKALTO</span>
+                    <span class="text-white  hotels-title ms-3 text-center">HOTELS & RESORTS</span>
+                </div>
+                <p class="text-white-50 mt-2 text-center footer-text">Duis vitae nulla at nisl finibus pharetra.
+                    Nunc porttitor sapien quis euismod
+                    sodales. Nullam in ipsum nibh.
+                </p>
+                <div class="d-flex flex-column flex-md-row gap-3 pt-2">
+
+                    <span class="ms-3"><b>Follow us: </b></span>
+                    <span class=" d-flex justify-content-center gap-3">
+                        <i class="fa-brands fa-facebook-f link-text"></i>
+                        <i class="fa-brands fa-twitter link-text"></i>
+                        <i class="fa-brands fa-instagram link-text"></i>
+                        <i class="fa-brands fa-youtube link-text"></i>
+                        <i class="fa-brands fa-pinterest link-text"></i>
+                    </span>
+                </div>
+
+            </div>
+            <div class="d-flex flex-column flex-md-row gap-md-5 gap-2 justify-content-between">
+                <div
+                    class="d-flex flex-column justify-content-md-between justify-content-center align-items-center align-items-md-center">
+                    <span class="fs-5"><b>About</b></span>
+
+                    <ul class="d-flex flex-column gap-2 mt-3 ">
+
+                        <li class="list-unstyled"><a href="#" class="text-decoration-none text-white-50 link-text">About
+                                us</a></li>
+                        <li class="list-unstyled"><a href="#"
+                                class="text-decoration-none text-white-50 link-text">Careers</a></li>
+                        <li class="list-unstyled"><a href="#"
+                                class="text-decoration-none text-white-50 link-text">Contact us</a></li>
+                        <li class="list-unstyled"><a href="#"
+                                class="text-decoration-none text-white-50 link-text">Blog</a></li>
+                        <li class="list-unstyled"><a href="#" class="text-decoration-none text-white-50 link-text">Gift
+                                Cards</a></li>
+                    </ul>
+
+                </div>
+                <div
+                    class="d-flex flex-column justify-content-md-between justify-content-center align-items-center align-items-md-center">
+                    <span class="fs-5"><b>Services</b></span>
+
+                    <ul class="d-flex flex-column gap-2 mt-3 ">
+
+                        <li class="list-unstyled"><a href="#"
+                                class="text-decoration-none text-white-50 link-text">Spa</a></li>
+                        <li class="list-unstyled"><a href="#"
+                                class="text-decoration-none text-white-50 link-text">Experience</a></li>
+                        <li class="list-unstyled"><a href="#"
+                                class="text-decoration-none text-white-50 link-text">Weddings</a></li>
+                        <li class="list-unstyled"><a href="#"
+                                class="text-decoration-none text-white-50 link-text">Dinning</a></li>
+                        <li class="list-unstyled"><a href="#"
+                                class="text-decoration-none text-white-50 link-text">Event</a></li>
+                    </ul>
+
+                </div>
+                <div
+                    class="d-flex flex-column justify-content-md-between justify-content-center align-items-center align-items-md-center">
+
+                    <span class="fs-5"><b>Quick Links</b></span>
+
+
+                    <ul class="d-flex flex-column gap-2 mt-3 ">
+                        <li class="list-unstyled"> <a href="#"
+                                class="text-decoration-none text-white-50 link-text">Facilities</a></li>
+                        <li class="list-unstyled"> <a href="#"
+                                class="text-decoration-none text-white-50 link-text">Accomodation </a></li>
+                        <li class="list-unstyled"> <a href="#"
+                                class="text-decoration-none text-white-50 link-text">Reservation</a></li>
+                        <li class="list-unstyled"> <a href="#" class="text-decoration-none text-white-50 link-text">Why
+                                Choose Us</a></li>
+                        <li class="list-unstyled"> <a href="#" class="text-decoration-none text-white-50 link-text">Our
+                                Restaurant</a></li>
+
+                    </ul>
+                </div>
+
+                <div
+                    class="d-flex flex-column justify-content-md-start justify-content-center align-items-center align-items-md-start">
+
+                    <span class="fs-5"><b>Contact Us</b></span>
+                    <div class="mt-md-3">
+                        <p class="text-white-50 d-inline text-start">Total Free Customer Support</p>
+                        <p class="text-md-start text-center">(+123) 1500-456-7890</p>
+                    </div>
+
+                    <div class="mt-3">
+                        <p class="text-white-50 d-inline text-center">Need Live support?</p>
+                        <p class="text-center">reservation@mikalto.com</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <hr class="text-white-50 container">
+
+        <div
+            class="container d-flex flex-column flex-md-row justify-content-md-evenly justify-content-center align-items-center">
+            <div class="d-flex flex-column flex-md-row  gap-md-5">
+                <p class="text-white">Copyright © 2022 Mikalto JWS.</p>
+
+                <ul class="d-flex flex-column flex-md-row gap-3 mx-auto">
+                    <li class="list-unstyled"> <a href="#"
+                            class="text-decoration-none text-white-50 link-text">Privacy</a></li>
+                    <li class="list-unstyled"> <a href="#" class="text-decoration-none text-white-50 link-text">Terms
+                        </a></li>
+                    <li class="list-unstyled"> <a href="#"
+                            class="text-decoration-none text-white-50 link-text">Sitemap</a></li>
+
+                </ul>
+            </div>
+            <div class="d-flex gap-3 mx-auto align-items-center">
+                <i class="fa-solid fa-globe text-white"></i>
+                <span class="text-white ">En</span>
+            </div>
+        </div>
+    </footer>
+    <script src="/mikalto-frontend/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/6dc7929f7c.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
