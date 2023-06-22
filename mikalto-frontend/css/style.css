@@ -46,7 +46,7 @@ body {
 }
 
 .welcome-left {
-    width: 25rem;
+    width: 18rem;
 }
 
 .hero-btn:hover {
@@ -231,6 +231,10 @@ li {
     .house-image {
         width: 18rem;
 
+    }
+    
+    .welcome-left {
+        width: 25rem;
     }
 
     .pool-image {
