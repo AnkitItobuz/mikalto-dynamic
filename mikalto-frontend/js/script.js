@@ -6,43 +6,21 @@ const slides = document.querySelectorAll(".slides");
 const checkIn = document.querySelector(".check-in-date");
 const submit = document.querySelector(".submit-btn");
 
-const checkinInput = document.getElementById('checkin');
-const checkoutInput = document.getElementById('checkout');
+let checkInDate;
+let checkOutDate;
+window.onload=function(){
+   const todayDate = new Date().toISOString().split('T')[0];
+   checkInDate = todayDate;
+  document.getElementsByName("check-in-date")[0].setAttribute('min', checkInDate);
 
-// Add event listener to the check-in input field
-checkinInput.addEventListener('change', function() {
-  const checkinDate = new Date(checkinInput.value);
-  
-  // Calculate the check-out date as 1 day after the check-in date
-  const checkoutDate = new Date(checkinDate);
-  checkoutDate.setDate(checkoutDate.getDate() + 1);
-  
-  // Set the value and minimum selectable date for the check-out input field
-  checkoutInput.value = formatDate(checkoutDate);
-  checkoutInput.min = formatDate(checkoutDate);
-});
+  const checkOutDate = document.getElementsByClassName("check-out-date");
+  checkOutDate.value = todayDate.toISOString().slice(0, 10)
+  console.log(checkOutDate.value);
+      checkOutDate.setAttribute("min", todayDate.toISOString().slice(0, 10));
 
-// Add event listener to the check-out input field
-checkoutInput.addEventListener('change', function() {
-  const checkinDate = new Date(checkinInput.value);
-  const checkoutDate = new Date(checkoutInput.value);
+  // checkOutDate = todayDate;
+  // document.getElementsByName("check-out-date")[0].setAttribute('min', checkOutDate);
 
-  // Compare the check-in and check-out dates
-  if (checkinDate && checkoutDate && checkinDate >= checkoutDate) {
-    alert("Check-out date must be after the check-in date");
-    checkoutInput.value = "";
-  }
-});
-
-// Disable past dates in the check-in input field
-const today = new Date().toISOString().split('T')[0];
-checkinInput.min = today;
-
-function formatDate(date) {
-  const year = date.getFullYear();
-  const month = String(date.getMonth() + 1).padStart(2, '0');
-  const day = String(date.getDate()).padStart(2, '0');
-  return `${year}-${month}-${day}`;
 }
 
 
