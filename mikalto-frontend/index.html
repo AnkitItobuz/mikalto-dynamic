@@ -66,7 +66,7 @@
                                 Checkin*
                             </label>
         
-                            <input type="date" placeholder="Check-in-date" name="check-in-date" id = "checkin"
+                            <input type="date" placeholder="Check-in-date" name="check-in-date" id = "checkin" required
                                 class="border-start-0 border-end-0 border-top-0 border-bottom-1 check-in-date selecting-no">
                         </div>
                         <div class="d-flex flex-column ">
@@ -74,15 +74,15 @@
                                 Checkout*
                             </label>
         
-                            <input type="date" placeholder="Check-in-date" name="check-out-date" id = "checkout"
+                            <input type="date" placeholder="Check-in-date" name="check-out-date" id = "checkout" required
                                 class="border-start-0 border-end-0 border-top-0 border-bottom-1 check-out-date selecting-no">
                         </div>
                     </div>
                     <div class="mt-4 mx-2 mx-md-0 d-flex flex-column">
                         <label for="Adults" class="color-blue"><i class="fa-regular fa-user me-1"></i> Adults</label>
                         <select name="numberOfAdults"
-                            class="adults-no selecting-no border-start-0 border-end-0 border-top-0 border-bottom-1 d-flex justify-content-between align-items-center mt-3 ">
-                            <option value="0"></option>
+                            class="adults-no selecting-no border-start-0 border-end-0 border-top-0 border-bottom-1 d-flex justify-content-between align-items-center mt-3 " required>
+                            <option value=""></option>
                             <option value="1 ">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -93,8 +93,8 @@
                     <div class="mt-4 mx-2 mx-md-0 d-flex flex-column">
                         <label for="Adults" class="color-blue"><i class="fa-solid fa-child me-1"></i> Children</label>
                         <select name="numberOfChildren"
-                            class="children-no selecting-no border-start-0 border-end-0 border-top-0 border-bottom-1 d-flex justify-content-between align-items-center mt-3 ">
-                            <option value="0"></option>
+                            class="children-no selecting-no border-start-0 border-end-0 border-top-0 border-bottom-1 d-flex justify-content-between align-items-center mt-3 " required>
+                            <option value=""> </option>
                             <option value="1 ">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
