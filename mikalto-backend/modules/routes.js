@@ -1,11 +1,5 @@
-import { heroSection } from "../data.js";
-import { welcomeSection } from "../data.js";
-import { roomsSection } from "../data.js";
-import { activitiesSection } from "../data.js";
-import { experienceSection } from "../data.js";
-import { helloSection } from "../data.js";
-import { ratingSection } from "../data.js";
-import { joinUsSection } from "../data.js";
+
+import * as data from "../database/data.js"
 
 import { modifyFile } from "./formData.js";
 
@@ -21,42 +15,42 @@ export function getRequestData(req) {
   } else if (req.url === "/heroSection") {
     return JSON.stringify({
       // status,
-      heroSection: heroSection,
+      heroSection: data.heroSection,
     });
   } else if (req.url === "/welcomeSection") {
     return JSON.stringify({
       // status,
-      welcomeSection: welcomeSection,
+      welcomeSection: data.welcomeSection,
     });
   } else if (req.url === "/roomsSection") {
     return JSON.stringify({
       // status,
-      roomsSection: roomsSection,
+      roomsSection: data.roomsSection,
     });
   } else if (req.url === "/activitiesSection") {
     return JSON.stringify({
       // status,
-      activitiesSection: activitiesSection,
+      activitiesSection: data.activitiesSection,
     });
   } else if (req.url === "/experienceSection") {
     return JSON.stringify({
       // status,
-      experienceSection: experienceSection,
+      experienceSection: data.experienceSection,
     });
   } else if (req.url === "/helloSection") {
     return JSON.stringify({
       // status,
-      helloSection: helloSection,
+      helloSection: data.helloSection,
     });
   } else if (req.url === "/ratingSection") {
     return JSON.stringify({
       // status,
-      ratingSection: ratingSection,
+      ratingSection: data.ratingSection,
     });
   } else if (req.url === "/joinUsSection") {
     return JSON.stringify({
       // status,
-      joinUsSection: joinUsSection,
+      joinUsSection: data.joinUsSection,
     });
   } else if (req.url === "/post-data") {
     let chunks = "";

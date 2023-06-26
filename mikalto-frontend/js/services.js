@@ -2,7 +2,7 @@ const massageImage = document.querySelectorAll(".massage-image");
 const windowImage = document.querySelectorAll(".window-view");
 const soapsImage = document.querySelectorAll(".soaps-image");
 const wildImage = document.querySelectorAll(".wild-image");
-// alert()
+
 getImages();
 async function getImages() {
   try {

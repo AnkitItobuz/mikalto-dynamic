@@ -1,5 +1,3 @@
-// import { METHODS } from "http";
-
 const leftScroll = document.querySelectorAll(".left-scroll");
 const rightScroll = document.querySelectorAll(".right-scroll");
 const slides = document.querySelectorAll(".slides");
@@ -11,17 +9,13 @@ let checkOutDate;
 window.onload = function () {
   const todayDate = new Date().toISOString().split("T")[0];
   checkInDate = todayDate;
-  document
-    .getElementsByName("check-in-date")[0]
-    .setAttribute("min", checkInDate);
+  document.getElementsByName("check-in-date")[0].setAttribute("min", checkInDate);
 
   const checkOutDate = document.getElementsByClassName("check-out-date");
   checkOutDate.value = todayDate.toISOString().slice(0, 10);
   console.log(checkOutDate.value);
   checkOutDate.setAttribute("min", todayDate.toISOString().slice(0, 10));
 
-  // checkOutDate = todayDate;
-  // document.getElementsByName("check-out-date")[0].setAttribute('min', checkOutDate);
 };
 
 async function heroSection() {
@@ -249,24 +243,24 @@ rightScroll.forEach((element) => {
 });
 
 const form = document.querySelector(".form");
-form.addEventListener("submit", (e) => {
+ form.addEventListener("submit", (e) => {
   e.preventDefault();
-  let data = fetch("http://localhost:9400/post-data", {
+ 
+   let  data = fetch("http://localhost:9400/post-data", {
     method: "POST",
     headers: {
       "Content-type": "data/json; charset=UTF-8",
     },
-    body: `id=${Date.now()}&checkInDate=${
-      document.querySelector(".check-in-date ").value
-    }&checkOutDate=${
-      document.querySelector(".check-out-date ").value
-    }&noOfAdults=${document.querySelector(".adults-no").value}&noOfchildren=${
-      document.querySelector(".children-no").value
-    }`,
-  }).then((res) => {
-    document.querySelector(".check-in-date ").value = "";
+    body: `id=${Date.now()}&checkInDate=${document.querySelector(".check-in-date ").value
+      }&checkOutDate=${document.querySelector(".check-out-date ").value
+      }&noOfAdults=${document.querySelector(".adults-no").value}&noOfchildren=${document.querySelector(".children-no").value
+      }`,
+  })
+     document.querySelector(".check-in-date ").value = "";
     document.querySelector(".check-out-date ").value = "";
     document.querySelector(".adults-no").value = "";
     document.querySelector(".children-no").value = "";
-  })(alert("form submitted successfully!!"));
-});
+    (alert("form submitted successfully"));
+
+
+})
