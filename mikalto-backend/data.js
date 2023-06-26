@@ -1,21 +1,21 @@
 
 export const heroSection = 
     {
-        image:'/mikalto-frontend/images/hero-section/zero-take-WvHrrR1C5Po-unsplash.jpg'
+        image:'/mikalto-backend/images/hero-section/zero-take-WvHrrR1C5Po-unsplash.jpg'
     };
 
 export const welcomeSection =
     {
-        houseImage: "/mikalto-frontend/images/activites-section/house.png",
-        poolImage: "/mikalto-frontend/images/activites-section/pool.png",
-        house2Image: "/mikalto-frontend/images/activites-section/house.png"
+        houseImage: "/mikalto-backend/images/activites-section/house.png",
+        poolImage: "/mikalto-backend/images/activites-section/pool.png",
+        house2Image: "/mikalto-backend/images/activites-section/house.png"
     };
 
     export const roomsSection =
     {
         standardRoom: 
         {
-            img: "/mikalto-frontend/images/rooms/standard-room.jpg",
+            img: "/mikalto-backend/images/rooms/standard-room.jpg",
             price:"$ 130",
             bed: "Double Size Bed",
             capacity: "2 adults, 1 children",
@@ -25,7 +25,7 @@ export const welcomeSection =
 
         luxaryRoom:
         {
-         img: "/mikalto-frontend/images/rooms/luxary-room.jpg",
+         img: "/mikalto-backend/images/rooms/luxary-room.jpg",
          price:"$ 280",
          bed: "Queen Size Bed",
          capacity: "4 adults, 1 children",
@@ -35,7 +35,7 @@ export const welcomeSection =
 
         ordinaryRoom: 
         {
-            img: "/mikalto-frontend/images/rooms/ordinary-room.jpg",
+            img: "/mikalto-backend/images/rooms/ordinary-room.jpg",
             price:"$ 40",
             bed: "Single Size Bed",
             capacity: "1 adults, 1 children",
@@ -46,27 +46,27 @@ export const welcomeSection =
 
     export const activitiesSection =
     {
-        swimmingPool: "/mikalto-frontend/images/activites-section/pool.png",
-        house: "/mikalto-frontend/images/activites-section/house.png"
+        swimmingPool: "/mikalto-backend/images/activites-section/pool.png",
+        house: "/mikalto-backend/images/activites-section/house.png"
     };
 
     export const experienceSection =
     {
-        massageImage: "/mikalto-frontend/images/experience-section/massage.png",
-        windowView: "/mikalto-frontend/images/experience-section/window.png",
-        soapsImage: "/mikalto-frontend/images/experience-section/soap.png",
-        wildImage: "/mikalto-frontend/images/experience-section/adventure.png"
+        massageImage: "/mikalto-backend/images/experience-section/massage.png",
+        windowView: "/mikalto-backend/images/experience-section/window.png",
+        soapsImage: "/mikalto-backend/images/experience-section/soap.png",
+        wildImage: "/mikalto-backend/images/experience-section/adventure.png"
     };
     export const helloSection =
     {
-        backgroundImage: "/mikalto-frontend/images/hello-section/pool.jpg"
+        backgroundImage: "/mikalto-backend/images/hello-section/pool.jpg"
     };
 
     export const ratingSection =
      {
         firstCustomer:
         {
-            customerImage:"/mikalto-frontend/images/employee/jhonedoe.png",
+            customerImage:"/mikalto-backend/images/employee/jhonedoe.png",
             customerName: "Selena Mayer",
             dateOfReview: "2021-01-10",
             reviewHead: "Wondeerful new year trip",
@@ -75,7 +75,7 @@ export const welcomeSection =
 
         secondCustomer: 
         {
-            customerImage:"/mikalto-frontend/images/employee/muriel.png",
+            customerImage:"/mikalto-backend/images/employee/muriel.png",
             customerName: "Esther Howard",
             dateOfReview: "2021-01-10",
             reviewHead: "Recommended",
@@ -85,7 +85,7 @@ export const welcomeSection =
         thirdCustomer:
         {
             
-            customerImage:"/mikalto-frontend/images/employee/norm.png",
+            customerImage:"/mikalto-backend/images/employee/norm.png",
             customerName: "Jane Cooper",
             dateOfReview: "2021-01-10",
             reviewHead: "All good",
@@ -97,9 +97,9 @@ export const welcomeSection =
     
     export const joinUsSection = 
     {
-        bridgeImage: "/mikalto-frontend/images/join-us/bridge.jpg",
-        catImage: "/mikalto-frontend/images/join-us/cat.jpg",
-        forestImage: "/mikalto-frontend/images/join-us/dog.jpg"
+        bridgeImage: "/mikalto-backend/images/join-us/bridge.jpg",
+        catImage: "/mikalto-backend/images/join-us/cat.jpg",
+        forestImage: "/mikalto-backend/images/join-us/dog.jpg"
     }
 
 

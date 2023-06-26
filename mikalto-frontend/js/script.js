@@ -220,6 +220,4 @@ let data = fetch("http://localhost:9400/post-data", {
   document.querySelector(".adults-no").value = "";
   document.querySelector(".children-no").value = "";
 })
-
-
 })

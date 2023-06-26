@@ -1,22 +1,17 @@
-import http from 'http';
-import fs from "fs/promises";
-import url from "url";
-import { error, log } from 'console';
-import { heroSection } from '../data.js';
-import { welcomeSection } from '../data.js';
-import { roomsSection } from '../data.js';
-import { activitiesSection } from '../data.js';
-import { experienceSection } from '../data.js';
-import { helloSection } from '../data.js';
-import { ratingSection } from '../data.js';
-import { joinUsSection } from '../data.js';
+import { heroSection } from './data.js';
+import { welcomeSection } from './data.js';
+import { roomsSection } from './data.js';
+import { activitiesSection } from './data.js';
+import { experienceSection } from './data.js';
+import { helloSection } from './data.js';
+import { ratingSection } from './data.js';
+import { joinUsSection } from './data.js';
+
+
 import { parse } from "querystring";
 
-const port = 9400;
-// console.log(`server is running on http://${port}`);
 
-
-function getRequestData(req) {
+export function getRequestData(req) {
     let status = 200;
     if (req.url === "/") {
         return JSON.stringify({
@@ -68,6 +63,7 @@ function getRequestData(req) {
     }
     else if (req.url === "/joinUsSection") {
         return JSON.stringify({
+
             // status,
             joinUsSection: joinUsSection,
         })
@@ -96,29 +92,3 @@ function getRequestData(req) {
        })
     }
 }
-
-async function modifyFile(totalFormData, fileName) {
-    let readFileData = await fs.readFile(fileName, "utf-8");
-    readFileData = JSON.parse(readFileData);
-    readFileData.push(totalFormData);
-    await fs.writeFile(fileName, JSON.stringify(readFileData));
-  }
-
-const server = http.createServer((req, res) => {
-    try {
-        res.setHeader("Access-Control-Allow-Origin", "*");
-        res.setHeader("Access-Control-Allow-Headers", "*");
-        res.end(getRequestData(req));
-
-    }
-    catch(error)
-    {
-        console.log(error);
-    }
-
-})
-
-server.listen(port, () => {
-    console.log(`server is running on port http://localhost:${port}`);
-
-})
