@@ -1,436 +1,413 @@
 body {
-    box-sizing: border-box;
-    font-family: 'Playfair Display', serif !important;
-    padding-left: 15px;
-    padding-right: 15px;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif !important;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .color-blue {
-    color: rgb(60, 60, 134) !important;
+  color: rgb(60, 60, 134) !important;
 }
 
 .color-mid-blue {
-    color: rgb(126, 126, 151) !important;
+  color: rgb(126, 126, 151) !important;
 }
 
 .color-pink {
-    color: rgba(255, 192, 203, 0.55);
+  color: rgba(255, 192, 203, 0.55);
 }
 
 .background-blue {
-    background-color: rgb(57, 57, 111);
+  background-color: rgb(57, 57, 111);
 }
 
 .hotels-title {
-    font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 
 .hero-section {
-    /* background-image: url('/mikalto-frontend/images/hero-section/zero-take-WvHrrR1C5Po-unsplash.jpg'); */
-    min-height: 40rem;
-    background-size: cover;
-
+  /* background-image: url('/mikalto-frontend/images/hero-section/zero-take-WvHrrR1C5Po-unsplash.jpg'); */
+  min-height: 40rem;
+  background-size: cover;
 }
 
 .house-image {
-    width: 25rem;
-
+  width: 25rem;
 }
 
 .pool-image {
-    width: 25rem;
+  width: 25rem;
 }
 
 .house2-image {
-    width: 25rem;
+  width: 25rem;
 }
 
 .welcome-left {
-    width: 18rem;
+  width: 18rem;
 }
 
 .hero-btn:hover {
-
-    background-color: white !important;
-    /* padding: 1rem; */
-    color: black !important;
+  background-color: white !important;
+  /* padding: 1rem; */
+  color: black !important;
 }
 
 .room-section-info {
-    width: 100%;
-
+  width: 100%;
 }
 
 .room-section-image {
-    width: 100%;
+  width: 100%;
 }
 
 .room-section-image img {
-    width: 100%;
-
-
+  width: 100%;
 }
 
 .icon-size {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 li {
-    color: pink;
-
+  color: pink;
 }
 
-
 .experience-cards-text {
-    width: 15rem;
+  width: 15rem;
 }
 
 .experience-spa-head {
-    width: 81%;
+  width: 81%;
 }
 
 .activities-info {
-    width: 95vw;
+  width: 95vw;
 }
 
 .activities-image img {
-    width: 95vw;
+  width: 95vw;
 }
 
 .experience-cards img {
-    height: 23rem;
+  height: 23rem;
 }
 
 .rating-card {
-    width: 21%;
+  width: 21%;
 }
 
 .hello-section {
-    /* background-image: url('/images/hello-section/pool.jpg'); */
-    background-size: cover;
-    min-height: 25rem;
+  /* background-image: url('/images/hello-section/pool.jpg'); */
+  background-size: cover;
+  min-height: 25rem;
 }
 
 .hello-section-card {
-    width: 70vw;
+  width: 70vw;
 }
 
 .google-map {
-    width: 66vw;
+  width: 66vw;
 }
 
-
-
 .bridge-image img {
-    width: 15rem;
-    height: 17rem;
+  width: 15rem;
+  height: 17rem;
 }
 
 .cat-image {
-    width: 15rem;
-    height: 17rem;
+  width: 15rem;
+  height: 17rem;
 }
 
 .dog-image {
-    width: 15rem;
-    height: 17rem;
+  width: 15rem;
+  height: 17rem;
 }
 
 .join-us-section {
-    background-color: rgba(255, 192, 203, 0.546);
+  background-color: rgba(255, 192, 203, 0.546);
 }
 
 .join-us-text {
-    width: 56%;
+  width: 56%;
 }
 
 .subscribe-box {
-    width: 45%;
+  width: 45%;
 }
 
 .customer-image {
-    height: 3rem;
+  height: 3rem;
 }
 
 .rating-section {
-    background-color: rgba(250, 235, 215, 0.521);
+  background-color: rgba(250, 235, 215, 0.521);
 }
 
 .rating-card-display {
-    display: none;
+  display: none;
 }
 
 .ratings-icon {
-
-    color: rgb(16, 168, 102);
+  color: rgb(16, 168, 102);
 }
 
 .room-section-image {
-    position: relative;
+  position: relative;
 }
 
 .scroll-btn {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    opacity: 0.5;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  opacity: 0.5;
 }
 
 .scroll-btn:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .right-scroll {
-    right: 10px;
+  right: 10px;
 }
 
 .left-scroll {
-    left: 10px;
+  left: 10px;
 }
 
 .slides {
-    display: none !important;
-
+  display: none !important;
 }
 
-.view-servies-btn a  {
-    border: 2px solid rgb(60, 60, 134) !important;
+.view-servies-btn a {
+  border: 2px solid rgb(60, 60, 134) !important;
 }
 
 .view-servies-btn a:hover {
-    background-color: rgb(70, 70, 183);
-    color: white !important;
+  background-color: rgb(70, 70, 183);
+  color: white !important;
 }
 
 .other-btns:hover {
-    background-color: rgb(70, 70, 183);
-    color: white !important;
+  background-color: rgb(70, 70, 183);
+  color: white !important;
 }
 .link-text:hover {
-    color: chocolate !important;
-    cursor: pointer;
-    scale: 1.2;
+  color: chocolate !important;
+  cursor: pointer;
+  scale: 1.2;
 }
 
 .discover-btn:hover {
-    color: chocolate !important;
-
+  color: chocolate !important;
 }
 
 .slider {
-    transition-duration: 10s;
+  transition-duration: 10s;
 
-    transform: translatex(100%);
+  transform: translatex(100%);
 }
 
 .selecting-no:focus {
-    outline: none;
+  outline: none;
 }
 
-@media (min-width:768px) {
-    .house-image {
-        width: 18rem;
+@media (min-width: 768px) {
+  .house-image {
+    width: 18rem;
+  }
 
-    }
-    
-    .welcome-left {
-        width: 25rem;
-    }
+  .welcome-left {
+    width: 25rem;
+  }
 
-    .pool-image {
-        width: 18rem;
-    }
+  .pool-image {
+    width: 18rem;
+  }
 
-    .house2-image {
-        width: 18rem;
-    }
+  .house2-image {
+    width: 18rem;
+  }
 
-    .activities-info {
-        height: 54vh;
-        width: 70vw;
-    }
+  .activities-info {
+    height: 54vh;
+    width: 70vw;
+  }
 
-    .activities-image img {
-        height: 54vh;
-        width: 50vw
-    }
+  .activities-image img {
+    height: 54vh;
+    width: 50vw;
+  }
 
-    .room-section-info {
-        /* padding-left: 10rem; */
-        width: 100%;
-        height: 25.5rem;
-    }
+  .room-section-info {
+    /* padding-left: 10rem; */
+    width: 100%;
+    height: 25.5rem;
+  }
 
-    .room-section-image {
-        width: 50%;
-    }
+  .room-section-image {
+    width: 50%;
+  }
 
-    .room-section-image img {
-        height: 25.5rem;
-        width: 100%;
+  .room-section-image img {
+    height: 25.5rem;
+    width: 100%;
+  }
 
-    }
+  .bed-specification {
+    width: 70%;
+  }
 
-    .bed-specification {
-        width: 70%;
-    }
+  .experience-head {
+    width: 43rem;
+  }
 
-    .experience-head {
-        width: 43rem;
-    }
+  .choose-us-card {
+    /* width: 70%; */
+  }
 
-    .choose-us-card {
-        /* width: 70%; */
-    }
+  .activities-info {
+    width: 70vw;
+  }
 
-    .activities-info {
-        width: 70vw;
-    }
+  .activities-image img {
+    width: 48.5vw;
+  }
 
-    .activities-image img {
-        width: 48.5vw;
-    }
+  .hello-section-card {
+    width: 50vw;
+    margin-left: 20rem;
+  }
 
-    .hello-section-card {
-        width: 50vw;
-        margin-left: 20rem;
-    }
+  .bridge-image img {
+    width: 30rem;
+    height: 35rem;
+  }
 
-    .bridge-image img {
-        width: 30rem;
-        height: 35rem;
-    }
+  .cat-image {
+    width: 15rem;
+    height: 17rem;
+  }
 
-    .cat-image {
-        width: 15rem;
-        height: 17rem;
-    }
-
-    .dog-image {
-        width: 15rem;
-        height: 17rem;
-    }
-
-
+  .dog-image {
+    width: 15rem;
+    height: 17rem;
+  }
 }
 
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
+  body {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 
-    body {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
+  .hero-section {
+    /* background-image: url('/images/hero-section/zero-take-WvHrrR1C5Po-unsplash.jpg'); */
+    min-height: 40rem;
+    background-size: cover;
+  }
 
-    .hero-section {
-        /* background-image: url('/images/hero-section/zero-take-WvHrrR1C5Po-unsplash.jpg'); */
-        min-height: 40rem;
-        background-size: cover;
+  .house-image {
+    position: relative;
+    height: 15rem !important;
+    width: 16rem;
+  }
 
-    }
+  .pool-image {
+    position: absolute;
+    top: 35%;
+    left: 76%;
+    width: 14rem;
+  }
 
-    .house-image {
-        position: relative;
-        height: 15rem !important;
-        width: 16rem;
+  .house2-image {
+    position: absolute;
+    top: 59%;
+    left: 71%;
+    width: 15rem;
+  }
 
-    }
+  .map-section-left {
+    width: 30%;
+  }
 
-    .pool-image {
-        position: absolute;
-        top: 35%;
-        left: 76%;
-        width: 14rem;
-    }
+  .room-section-image {
+    width: 60%;
+  }
 
-    .house2-image {
-        position: absolute;
-        top: 59%;
-        left: 71%;
-        width: 15rem;
-    
-    }
+  .room-section-image img {
+    height: 27.7rem;
+  }
 
-    .map-section-left {
-        width: 30%;
-    }
+  .activities-info {
+    height: 54vh;
+    width: 70vw;
+  }
 
-    .room-section-image {
-        width: 60%;
-    }
+  .activities-image img {
+    height: 54vh;
+    width: 50vw;
+  }
 
-    .room-section-image img {
-        height: 27.7rem;
-    }
+  .choose-us-card {
+    width: 30%;
+  }
 
-    .activities-info {
-        height: 54vh;
-        width: 70vw;
-    }
+  .hello-section-card {
+    width: 25vw;
+  }
 
-    .activities-image img {
-        height: 54vh;
-        width: 50vw
-    }
+  .google-map {
+    width: 30vw;
+  }
 
-    .choose-us-card {
-        width: 30%;
-    }
+  .rating-card-display {
+    display: block;
+  }
 
-    .hello-section-card {
-        width: 25vw;
-    }
-
-    .google-map {
-        width: 30vw;
-    }
-
-    .rating-card-display {
-        display: block;
-    }
-
-    .footer-text {
-        width: 18vw;
-    } 
+  .footer-text {
+    width: 18vw;
+  }
 }
 
-@media (min-width:1400px) {
+@media (min-width: 1400px) {
+  .house-image {
+    position: relative;
+    height: 17rem !important;
+    width: 17rem;
+  }
 
-    .house-image {
-        position: relative;
-        height: 17rem !important;
-        width: 17rem;
+  .pool-image {
+    position: absolute;
+    top: 35%;
+    left: 77%;
+    width: 17rem;
+  }
 
-    }
+  .house2-image {
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    width: 17rem;
+  }
 
-    .pool-image {
-        position: absolute;
-        top: 35%;
-        left: 77%;
-        width: 17rem;
-    }
+  .room-section-info {
+    height: 33.7rem;
+  }
 
-    .house2-image {
-        position: absolute;
-        top: 60%;
-        left: 70%;
-        width: 17rem;
-    }
+  .room-section-image img {
+    height: 33.7rem;
+  }
 
-    .room-section-info {
-        height: 33.7rem;
-    }
+  .activities-info {
+    height: 54vh;
+    width: 50vw;
+  }
 
-    .room-section-image img {
-        height: 33.7rem;
-    }
-
-    .activities-info {
-        height: 54vh;
-        width: 50vw;
-    }
-
-    .activities-image img {
-        height: 54vh;
-        width: 50vw
-    }
+  .activities-image img {
+    height: 54vh;
+    width: 50vw;
+  }
 }

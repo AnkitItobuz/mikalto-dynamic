@@ -256,16 +256,17 @@ form.addEventListener("submit", (e) => {
     headers: {
       "Content-type": "data/json; charset=UTF-8",
     },
-    body: `id=${Date.now()}&checkInDate=${document.querySelector(".check-in-date ").value
-      }&checkOutDate=${document.querySelector(".check-out-date ").value
-      }&noOfAdults=${document.querySelector(".adults-no").value}&noOfchildren=${document.querySelector(".children-no").value
-      }`,
+    body: `id=${Date.now()}&checkInDate=${
+      document.querySelector(".check-in-date ").value
+    }&checkOutDate=${
+      document.querySelector(".check-out-date ").value
+    }&noOfAdults=${document.querySelector(".adults-no").value}&noOfchildren=${
+      document.querySelector(".children-no").value
+    }`,
   }).then((res) => {
-     document.querySelector(".check-in-date ").value = "";
-     document.querySelector(".check-out-date ").value = "";
-     document.querySelector(".adults-no").value = "";
-     document.querySelector(".children-no").value = "";
-  })
-  (alert("form submitted successfully!!"));
-
-}) 
+    document.querySelector(".check-in-date ").value = "";
+    document.querySelector(".check-out-date ").value = "";
+    document.querySelector(".adults-no").value = "";
+    document.querySelector(".children-no").value = "";
+  })(alert("form submitted successfully!!"));
+});
