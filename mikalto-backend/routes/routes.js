@@ -63,7 +63,7 @@ export function getRequestData(req) {
     });
   }
    else if (req.url === "/post-data") {
-    // return formData(req);
+     formData(req);
   }
  
    else {
