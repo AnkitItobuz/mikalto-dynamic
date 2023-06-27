@@ -1,5 +1,4 @@
 import http from "http";
-// import { port } from ".config.js";
 import { port } from "./config.js";
 import { getRequestData } from "./routes/routes.js";
 

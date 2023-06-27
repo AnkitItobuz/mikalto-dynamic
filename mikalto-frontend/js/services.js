@@ -3,7 +3,6 @@ const windowImage = document.querySelectorAll(".window-view");
 const soapsImage = document.querySelectorAll(".soaps-image");
 const wildImage = document.querySelectorAll(".wild-image");
 
-getImages();
 async function getImages() {
   try {
     let data = await fetch("http://localhost:9400/experienceSection").then(
@@ -28,3 +27,5 @@ async function getImages() {
     console.log("error");
   }
 }
+getImages();
+
