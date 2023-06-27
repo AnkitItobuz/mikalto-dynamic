@@ -1,5 +1,6 @@
 import http from "http";
-import { port } from "./modules/config.js";
+// import { port } from ".config.js";
+import { port } from "./config.js";
 import { getRequestData } from "./routes/routes.js";
 
 const server = http.createServer((req, res) => {

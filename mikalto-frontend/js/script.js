@@ -20,7 +20,7 @@ window.onload = function () {
 
 async function heroSection() {
   try {
-    let data = await fetch("http://localhost:9400/heroSection").then((data) =>
+    let data = await fetch("http://localhost:8400/heroSection").then((data) =>
       data.json()
     );
     document.querySelector(
@@ -34,7 +34,7 @@ heroSection();
 
 async function welcomeSection() {
   try {
-    let data = await fetch("http://localhost:9400/welcomeSection").then(
+    let data = await fetch("http://localhost:8400/welcomeSection").then(
       (data) => data.json()
     );
     document.querySelector(".house-image").src = data.welcomeSection.houseImage;
@@ -49,7 +49,7 @@ welcomeSection();
 
 async function roomsSection() {
   try {
-    let data = await fetch("http://localhost:9400/roomsSection").then((data) =>
+    let data = await fetch("http://localhost:8400/roomsSection").then((data) =>
       data.json()
     );
     document.querySelector(".standard-room").src =
@@ -99,7 +99,7 @@ roomsSection();
 
 async function activitiesSection() {
   try {
-    let data = await fetch("http://localhost:9400/activitiesSection").then(
+    let data = await fetch("http://localhost:8400/activitiesSection").then(
       (data) => data.json()
     );
     document.querySelector(".swimming-pool-image").src =
@@ -113,7 +113,7 @@ activitiesSection();
 
 async function experienceSection() {
   try {
-    let data = await fetch("http://localhost:9400/experienceSection").then(
+    let data = await fetch("http://localhost:8400/experienceSection").then(
       (data) => data.json()
     );
     document.querySelector(".massage-image").src =
@@ -132,7 +132,7 @@ experienceSection();
 
 async function helloSection() {
   try {
-    let data = await fetch("http://localhost:9400/helloSection").then((data) =>
+    let data = await fetch("http://localhost:8400/helloSection").then((data) =>
       data.json()
     );
     document.querySelector(
@@ -146,7 +146,7 @@ helloSection();
 
 async function ratingSection() {
   try {
-    let data = await fetch("http://localhost:9400/ratingSection").then((data) =>
+    let data = await fetch("http://localhost:8400/ratingSection").then((data) =>
       data.json()
     );
     document.querySelector(".first-customer-image").src =
@@ -190,7 +190,7 @@ ratingSection();
 
 async function joinUsSection() {
   try {
-    let data = await fetch("http://localhost:9400/joinUsSection").then((data) =>
+    let data = await fetch("http://localhost:8400/joinUsSection").then((data) =>
       data.json()
     );
     document.querySelector(".bridge").src = data.joinUsSection.bridgeImage;
@@ -246,7 +246,7 @@ const form = document.querySelector(".form");
  form.addEventListener("submit", (e) => {
   e.preventDefault();
  
-   let  data = fetch("http://localhost:9400/post-data", {
+   let  data = fetch("http://localhost:8400/post-data", {
     method: "POST",
     headers: {
       "Content-type": "data/json; charset=UTF-8",

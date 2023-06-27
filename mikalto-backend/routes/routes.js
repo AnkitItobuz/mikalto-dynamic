@@ -1,7 +1,7 @@
 
 import * as data from "../database/data.js"
 
-import { modifyFile } from "./formData.js";
+import { formData } from "../modules/getFormData.js";
 
 import { parse } from "querystring";
 
@@ -56,28 +56,22 @@ export function getRequestData(req) {
       ratingSection: data.ratingSection,
     });
   } else if (req.url === "/joinUsSection") {
+    
     return JSON.stringify({
       // status,
       joinUsSection: data.joinUsSection,
     });
-  } else if (req.url === "/post-data") {
-    let chunks = "";
-    req.on("data", (chunk) => {
-      chunks = chunk.toString();
-    });
-    let parsedData;
-    req.on("end", () => {
-      parsedData = parse(chunks);
-      console.log(parsedData);
-      if (Object.keys(parsedData).length !== 0) {
-        modifyFile(parsedData, "./formData.json");
-      }
-    });
-    return JSON.stringify({ parsedData: parsedData });
-  } else {
+  }
+   else if (req.url === "/post-data") {
+    // return formData(req);
+  }
+ 
+   else {
     console.log(req.url);
     return JSON.stringify({
       message: "Successfully Connected",
     });
+  // formData(req);
+
   }
 }
