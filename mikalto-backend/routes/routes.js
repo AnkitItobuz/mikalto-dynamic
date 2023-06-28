@@ -1,62 +1,43 @@
 
 import * as data from "../database/data.js"
 import { formData } from "../modules/getFormData.js";
-
+import { getResponse } from "../modules/getResponse.js";
 
 export function getRequestData(req) {
   let status = 200;
   if (req.url === "/") {
-    return JSON.stringify({
-      text: "Welcome to api",
-    });
+    return getResponse("Welcome to mikalto api", "hello", true);
   } else if (req.url === "/heroSection") {
-    return JSON.stringify({
-      heroSection: data.heroSection,
-      message: "heroSection data",
-      Sucess: true
-    });
+    return getResponse(data.heroSection, "hero Section data", true);
   } else if (req.url === "/welcomeSection") {
-    return JSON.stringify({
-      welcomeSection: data.welcomeSection,
-      message: "welcomeSection data",
-      Sucess: true
-    });
+    return getResponse(data.welcomeSection, "welcome Section data", true);
+
   } else if (req.url === "/roomsSection") {
-    return JSON.stringify({
-      roomsSection: data.roomsSection,
-      message: "roomsSection data",
-      Sucess: true
-    });
+    return getResponse(data.roomsSection, "rooms Section data", true);
+
   } else if (req.url === "/activitiesSection") {
-    return JSON.stringify({
-      activitiesSection: data.activitiesSection,
-      message: "activitiesSection data",
-      Sucess: true
-    });
+    return getResponse(data.activitiesSection, "activities Section data", true);
+
   } else if (req.url === "/experienceSection") {
-    return JSON.stringify({
-      experienceSection: data.experienceSection,
-    });
+    return getResponse(data.experienceSection, "experience Section data", true);
+
   } else if (req.url === "/helloSection") {
-    return JSON.stringify({
-      helloSection: data.helloSection,
-    });
+    return getResponse(data.helloSection, "hello Section data", true);
+
   } else if (req.url === "/ratingSection") {
-    return JSON.stringify({
-      ratingSection: data.ratingSection,
-    });
+    return getResponse(data.ratingSection, "rating Section data", true);
+
   } else if (req.url === "/joinUsSection") {
     
-    return JSON.stringify({
-      joinUsSection: data.joinUsSection,
-    });
+    return getResponse(data.joinUsSection, "join us Section data", true);
+
   }
    else if (req.url === "/post-data") {
      formData(req);
   }
  
    else {
-    console.log(req.url);
+    // console.log(req.url);
     return JSON.stringify({
       message: "Successfully Connected",
     });

@@ -21,12 +21,10 @@ window.onload = function () {
 
 async function heroSection() {
   try {
-    let data = await fetch("http://localhost:8400/heroSection").then((data) =>
-      data.json()
+    let apiData = await fetch("http://localhost:8400/heroSection").then((apiData) =>
+      apiData.json()
     );
-    document.querySelector(
-      ".hero-section"
-    ).style.backgroundImage = `url(${data.heroSection.image})`;
+    document.querySelector(".hero-section").style.backgroundImage = `url(${apiData.data.image})`;
   } catch (error) {
     console.log("error in hero section");
   }
@@ -35,13 +33,13 @@ heroSection();
 
 async function welcomeSection() {
   try {
-    let data = await fetch("http://localhost:8400/welcomeSection").then(
-      (data) => data.json()
+    let apiData = await fetch("http://localhost:8400/welcomeSection").then(
+      (apiData) => apiData.json()
     );
-    document.querySelector(".house-image").src = data.welcomeSection.houseImage;
-    document.querySelector(".pool-image").src = data.welcomeSection.poolImage;
+    document.querySelector(".house-image").src = apiData.data.houseImage;
+    document.querySelector(".pool-image").src = apiData.data.poolImage;
     document.querySelector(".house2-image").src =
-      data.welcomeSection.house2Image;
+      apiData.data.house2Image;
   } catch (error) {
     console.log("error in welcome section");
   }
@@ -50,48 +48,48 @@ welcomeSection();
 
 async function roomsSection() {
   try {
-    let data = await fetch("http://localhost:8400/roomsSection").then((data) =>
-      data.json()
+    let apiData = await fetch("http://localhost:8400/roomsSection").then((apiData) =>
+      apiData.json()
     );
     document.querySelector(".standard-room").src =
-      data.roomsSection.standardRoom.img;
+      apiData.data.standardRoom.img;
     document.querySelector(".standard-room-price").innerHTML =
-      data.roomsSection.standardRoom.price;
+      apiData.data.standardRoom.price;
     document.querySelector(".standard-bed").innerHTML =
-      data.roomsSection.standardRoom.bed;
+      apiData.data.standardRoom.bed;
     document.querySelector(".standard-capacity").innerHTML =
-      data.roomsSection.standardRoom.capacity;
+      apiData.data.standardRoom.capacity;
     document.querySelector(".standard-size").innerHTML =
-      data.roomsSection.standardRoom.roomSize;
+      apiData.data.standardRoom.roomSize;
     document.querySelector(".standard-view").innerHTML =
-      data.roomsSection.standardRoom.view;
+      apiData.data.standardRoom.view;
 
     document.querySelector(".luxary-room").src =
-      data.roomsSection.luxaryRoom.img;
+      apiData.data.luxaryRoom.img;
     document.querySelector(".luxary-room-price").innerHTML =
-      data.roomsSection.luxaryRoom.price;
+      apiData.data.luxaryRoom.price;
     document.querySelector(".luxary-bed").innerHTML =
-      data.roomsSection.luxaryRoom.bed;
+      apiData.data.luxaryRoom.bed;
     document.querySelector(".luxary-capacity").innerHTML =
-      data.roomsSection.luxaryRoom.capacity;
+      apiData.data.luxaryRoom.capacity;
     document.querySelector(".luxary-size").innerHTML =
-      data.roomsSection.luxaryRoom.roomSize;
+      apiData.data.luxaryRoom.roomSize;
     document.querySelector(".luxary-view").innerHTML =
-      data.roomsSection.luxaryRoom.view;
+      apiData.data.luxaryRoom.view;
 
     document.querySelector(".ordinary-room").src =
-      data.roomsSection.ordinaryRoom.img;
+      apiData.data.ordinaryRoom.img;
     document.querySelector(".ordinary-room-price").innerHTML =
-      data.roomsSection.ordinaryRoom.price;
+      apiData.data.ordinaryRoom.price;
     document.querySelector(".ordinary-bed").innerHTML =
-      data.roomsSection.ordinaryRoom.bed;
+      apiData.data.ordinaryRoom.bed;
     document.querySelector(".ordinary-capacity").innerHTML =
-      data.roomsSection.ordinaryRoom.capacity;
+      apiData.data.ordinaryRoom.capacity;
     document.querySelector(".ordinary-size").innerHTML =
-      data.roomsSection.ordinaryRoom.roomSize;
+      apiData.data.ordinaryRoom.roomSize;
 
     document.querySelector(".ordinary-view").innerHTML =
-      data.roomsSection.ordinaryRoom.view;
+      apiData.data.ordinaryRoom.view;
   } catch (error) {
     console.log("error in rooms section");
   }
@@ -100,12 +98,12 @@ roomsSection();
 
 async function activitiesSection() {
   try {
-    let data = await fetch("http://localhost:8400/activitiesSection").then(
-      (data) => data.json()
+    let apiData = await fetch("http://localhost:8400/activitiesSection").then(
+      (apiData) => apiData.json()
     );
     document.querySelector(".swimming-pool-image").src =
-      data.activitiesSection.swimmingPool;
-    document.querySelector(".home-image").src = data.activitiesSection.house;
+      apiData.data.swimmingPool;
+    document.querySelector(".home-image").src = apiData.data.house;
   } catch (error) {
     console.log("error in rooms section");
   }
@@ -114,17 +112,17 @@ activitiesSection();
 
 async function experienceSection() {
   try {
-    let data = await fetch("http://localhost:8400/experienceSection").then(
-      (data) => data.json()
+    let apiData = await fetch("http://localhost:8400/experienceSection").then(
+      (apiData) => apiData.json()
     );
     document.querySelector(".massage-image").src =
-      data.experienceSection.massageImage;
+      apiData.data.massageImage;
     document.querySelector(".window-view").src =
-      data.experienceSection.windowView;
+      apiData.data.windowView;
     document.querySelector(".soaps-image").src =
-      data.experienceSection.soapsImage;
+      apiData.data.soapsImage;
     document.querySelector(".wild-image").src =
-      data.experienceSection.wildImage;
+      apiData.data.wildImage;
   } catch (error) {
     console.log("error in experience section");
   }
@@ -133,12 +131,12 @@ experienceSection();
 
 async function helloSection() {
   try {
-    let data = await fetch("http://localhost:8400/helloSection").then((data) =>
-      data.json()
+    let apiData = await fetch("http://localhost:8400/helloSection").then((apiData) =>
+      apiData.json()
     );
     document.querySelector(
       ".hello-section"
-    ).style.backgroundImage = `url(${data.helloSection.backgroundImage})`;
+    ).style.backgroundImage = `url(${apiData.data.backgroundImage})`;
   } catch (error) {
     console.log("error in hello section");
   }
@@ -147,41 +145,41 @@ helloSection();
 
 async function ratingSection() {
   try {
-    let data = await fetch("http://localhost:8400/ratingSection").then((data) =>
-      data.json()
+    let apiData = await fetch("http://localhost:8400/ratingSection").then((apiData) =>
+      apiData.json()
     );
     document.querySelector(".first-customer-image").src =
-      data.ratingSection.firstCustomer.customerImage;
+      apiData.data.firstCustomer.customerImage;
     document.querySelector(".first-customer-name").innerHTML =
-      data.ratingSection.firstCustomer.customerName;
+      apiData.data.firstCustomer.customerName;
     document.querySelector(".first-rating-date").innerHTML =
-      data.ratingSection.firstCustomer.dateOfReview;
+      apiData.data.firstCustomer.dateOfReview;
     document.querySelector(".first-customer-head").innerHTML =
-      data.ratingSection.firstCustomer.reviewHead;
+      apiData.data.firstCustomer.reviewHead;
     document.querySelector(".first-customer-review").innerHTML =
-      data.ratingSection.firstCustomer.reviewDetails;
+      apiData.data.firstCustomer.reviewDetails;
 
     document.querySelector(".second-customer-image").src =
-      data.ratingSection.secondCustomer.customerImage;
+      apiData.data.secondCustomer.customerImage;
     document.querySelector(".second-customer-name").innerHTML =
-      data.ratingSection.secondCustomer.customerName;
+      apiData.data.secondCustomer.customerName;
     document.querySelector(".second-rating-date").innerHTML =
-      data.ratingSection.secondCustomer.dateOfReview;
+      apiData.data.secondCustomer.dateOfReview;
     document.querySelector(".second-customer-head").innerHTML =
-      data.ratingSection.secondCustomer.reviewHead;
+      apiData.data.secondCustomer.reviewHead;
     document.querySelector(".second-customer-review").innerHTML =
-      data.ratingSection.secondCustomer.reviewDetails;
+      apiData.data.secondCustomer.reviewDetails;
 
     document.querySelector(".third-customer-image").src =
-      data.ratingSection.thirdCustomer.customerImage;
+      apiData.data.thirdCustomer.customerImage;
     document.querySelector(".third-customer-name").innerHTML =
-      data.ratingSection.thirdCustomer.customerName;
+      apiData.data.thirdCustomer.customerName;
     document.querySelector(".third-rating-date").innerHTML =
-      data.ratingSection.thirdCustomer.dateOfReview;
+      apiData.data.thirdCustomer.dateOfReview;
     document.querySelector(".third-customer-head").innerHTML =
-      data.ratingSection.thirdCustomer.reviewHead;
+      apiData.data.thirdCustomer.reviewHead;
     document.querySelector(".third-customer-review").innerHTML =
-      data.ratingSection.thirdCustomer.reviewDetails;
+      apiData.data.thirdCustomer.reviewDetails;
   } catch (error) {
     console.log("error in rating section");
   }
@@ -191,12 +189,12 @@ ratingSection();
 
 async function joinUsSection() {
   try {
-    let data = await fetch("http://localhost:8400/joinUsSection").then((data) =>
-      data.json()
+    let apiData = await fetch("http://localhost:8400/joinUsSection").then((apiData) =>
+      apiData.json()
     );
-    document.querySelector(".bridge").src = data.joinUsSection.bridgeImage;
-    document.querySelector(".cat-image").src = data.joinUsSection.catImage;
-    document.querySelector(".dog-image").src = data.joinUsSection.forestImage;
+    document.querySelector(".bridge").src = apiData.data.bridgeImage;
+    document.querySelector(".cat-image").src = apiData.data.catImage;
+    document.querySelector(".dog-image").src = apiData.data.forestImage;
   } catch (error) {
     console.log("error in join us section");
   }

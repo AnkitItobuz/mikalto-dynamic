@@ -5,23 +5,23 @@ const wildImage = document.querySelectorAll(".wild-image");
 
 async function getImages() {
   try {
-    let data = await fetch("http://localhost:9400/experienceSection").then(
-      (data) => data.json()
+    let apiData = await fetch("http://localhost:8400/experienceSection").then(
+      (apiData) => apiData.json()
     );
     massageImage.forEach((element) => {
-      element.src = data.experienceSection.massageImage;
+      element.src = apiData.data.massageImage;
     });
 
     windowImage.forEach((element) => {
-      element.src = data.experienceSection.windowView;
+      element.src = apiData.data.windowView;
     });
 
     soapsImage.forEach((element) => {
-      element.src = data.experienceSection.soapsImage;
+      element.src = apiData.data.soapsImage;
     });
 
     wildImage.forEach((element) => {
-      element.src = data.experienceSection.wildImage;
+      element.src = apiData.data.wildImage;
     });
   } catch {
     console.log("error");
