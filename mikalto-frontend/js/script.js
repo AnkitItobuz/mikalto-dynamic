@@ -12,7 +12,7 @@ window.onload = function () {
   checkInDate = todayDate;
   document.getElementsByName("check-in-date")[0].setAttribute("min", checkInDate);
 
-  const checkOutDate = document.getElementsByClassName("check-out-date");
+  checkOutDate = document.getElementsByClassName("check-out-date");
   checkOutDate.value = todayDate.toISOString().slice(0, 10);
   console.log(checkOutDate.value);
   checkOutDate.setAttribute("min", todayDate.toISOString().slice(0, 10));
