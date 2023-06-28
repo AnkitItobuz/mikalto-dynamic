@@ -93,7 +93,7 @@ li {
 }
 
 .rating-card {
-  width: 21%;
+  width: 94%;
 }
 
 .hello-section {
@@ -355,6 +355,10 @@ li {
 
   .google-map {
     width: 30vw;
+  }
+
+  .rating-card {
+    width: 21%;
   }
 
   .rating-card-display {

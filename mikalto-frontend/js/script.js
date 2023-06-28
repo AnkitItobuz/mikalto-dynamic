@@ -6,6 +6,7 @@ const submit = document.querySelector(".submit-btn");
 
 let checkInDate;
 let checkOutDate;
+
 window.onload = function () {
   const todayDate = new Date().toISOString().split("T")[0];
   checkInDate = todayDate;
